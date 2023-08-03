@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :users
-  root 'users#index'
 
-  get '/user_phone', to: "users#get_by_phone"
+  get '/user/phone', to: "users#get_data_by_phone"
 end
